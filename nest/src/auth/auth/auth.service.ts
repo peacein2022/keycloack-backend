@@ -12,7 +12,7 @@ export class AuthService {
         'http://host.docker.internal:8080/auth/realms/fullcycle/protocol/openid-connect/token',
         new URLSearchParams({
           client_id: 'nest',
-          client_secret: '57441e32-b353-40a5-81e3-75cda25e6b5e',
+          client_secret: 'Gj8cRv3ePedvuMYBYMs1iWvT6fWeXkYg',
           grant_type: 'password',
           username,
           password,

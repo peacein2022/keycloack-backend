@@ -3,9 +3,9 @@ import { KeycloakProfile, KeycloakTokenParsed } from "keycloak-js";
 import { parseCookies } from "./cookies";
 
 export const KEYCLOAK_CONFIG = {
-  realm: process.env.NEXT_PUBLIC_KEYCLOAK_REALM,
-  clientId: process.env.NEXT_PUBLIC_KEYCLOAK_CLIENT_ID,
-  url: process.env.NEXT_PUBLIC_KEYCLOAK_URL,
+  realm: process.env.NEXT_PUBLIC_KEYCLOAK_REALM || 'fullcycle',
+  clientId: process.env.NEXT_PUBLIC_KEYCLOAK_CLIENT_ID || 'nest',
+  url: process.env.NEXT_PUBLIC_KEYCLOAK_URL || 'http://localhost:8080/' ,
 };
 
 export function isTokenExpired(token: string) {

@@ -13,8 +13,8 @@ export class AuthController {
     return this.authService.login(body.username, body.password);
   }
 
-  //@Role('admin')
-  @UseGuards(JwtGuard)
+// @Role('admin')
+@UseGuards(JwtGuard)
   @Get('test-auth')
   test(@Req() req) {
     console.log(req.user);
